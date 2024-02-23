@@ -7,7 +7,7 @@ def main(obj) -> int:
         res = "I'm "
         res += "Odd." if number % 2 else "Even."
         print(res)
-    except:
+    except BaseException:
         raise AssertionError("argument is not an integer")
     return 0
 
@@ -15,7 +15,7 @@ def main(obj) -> int:
 if __name__ == "__main__":
     args = sys.argv
     if (len(args) == 1):
-      exit()
+        exit()
     try:
         assert len(args) == 2, "more than one argument is provided"
         main(args[1])
