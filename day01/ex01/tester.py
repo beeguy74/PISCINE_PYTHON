@@ -16,25 +16,30 @@ def main():
     prGreen(slice_me(family, 0, 2))
     prGreen(slice_me(family, 1, -2))
 
-    prYellow('\n01 string on 1 list')
+    prYellow('\n01 list has smaller size')
+    family = [1.80, 78.4]
+    prGreen(slice_me(family, 0, 2))
 
-    prYellow('\n02 string on 2 list')
+    prYellow('\n02 list has bigger size')
+    family = [[[1.80], [78.4]],
+              [[2.15], [102.7]],
+              [[2.10], [98.5]],
+              [[1.88], [75.2]]]
+    prGreen(slice_me(family, 0, 2))
 
-    prYellow('\n03 wrong size of 1 list')
+    prYellow('\n03 wrong second argument')
+    family = [[1.80, 78.4],
+              [2.15, 102.7],
+              [2.10, 98.5],
+              [1.88, 75.2]]
+    prGreen(slice_me(family, None, 2))
 
-    prYellow('\n04 wrong size of 2 list')
-
-    prYellow('\n06 wrong args give_bmi')
-
-    prYellow('\n07 wrong args apply_limit')
-
-    prYellow('\n08 wrong args apply_limit')
-
-    prYellow('\n09 wrong args apply_limit')
-
-    prYellow('\n10 wrong args apply_limit')
-
-    prYellow('\n11 wrong args apply_limit')
+    prYellow('\n04 wrong third arg')
+    family = [[1.80, 78.4],
+              [2.15, 102.7],
+              [2.10, 98.5],
+              [1.88, 75.2]]
+    prGreen(slice_me(family, 1, 's'))
 
 
 if __name__ == "__main__":
