@@ -42,7 +42,6 @@ def main():
 
     prYellow('\n04 gryy filter')
     greied = ft_grey(file)
-    print(greied)
     plt.imshow(greied)
     plt.show()
     plt.clf()
