@@ -19,6 +19,7 @@ def main():
     '''
     try:
         file = ft_load("animal.jpg")
+        assert len(file) > 0, 'image not found'
         print(file)
         res = ft_zoom(file, (-601, -201), (-501, -101), (1, 2))
         print(f'New shape after slicing: {res.shape} or {res.shape[0: 2]}')
@@ -26,7 +27,7 @@ def main():
         plt.imshow(res, cmap='gray')
         plt.show()
     except Exception as e:
-        print("Error ft_load:", e)
+        print("Error zoom:", e)
 
 
 if __name__ == "__main__":
