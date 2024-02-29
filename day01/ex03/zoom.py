@@ -22,7 +22,7 @@ def main():
         assert len(file) > 0, 'image not found'
         print(file)
         res = ft_zoom(file, (-601, -201), (-501, -101), (1, 2))
-        print(f'New shape after slicing: {res.shape} or {res.shape[0: 2]}')
+        print(f'New shape after slicing: {res.shape} or {res.squeeze().shape}')
         print(res)
         plt.imshow(res, cmap='gray')
         plt.show()
