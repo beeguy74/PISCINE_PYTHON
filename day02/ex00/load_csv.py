@@ -8,6 +8,6 @@ def load(path: str) -> DataFrame:
     try:
         data = read_csv(path)
         print("Loading dataset of dimensions", data.shape)
-    except Exception as e:
+    except OSError as e:
         print("Loading csv failed:", e)
     return data
