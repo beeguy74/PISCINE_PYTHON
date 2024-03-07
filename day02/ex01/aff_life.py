@@ -12,7 +12,10 @@ def main():
     '''
     df = load("sample_data/life_expectancy_years.csv")
     res = df.loc['France']
-    plt.plot(res)
+    plt.plot(res.index.astype(int), res.values)
+    plt.xlabel("Year")
+    plt.ylabel("Life expectancy")
+    plt.title("France Life expectancy Projections")
     plt.show()
 
 
