@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 
 def main():
     '''
-    loads the file 'life_expectancy_years.csv', and displays
-    the country information of your campus.
+    displays population of Russia and France
     '''
     df = load("sample_data/population_total.csv")
     if df is None:
