@@ -11,6 +11,8 @@ def main():
     the country information of your campus.
     '''
     df = load("sample_data/life_expectancy_years.csv")
+    if not df:
+        return
     res = df.loc['France']
     plt.plot(res.index.astype(int), res.values)
     plt.xlabel("Year")
