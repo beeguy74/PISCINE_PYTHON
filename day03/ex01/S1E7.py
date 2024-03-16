@@ -2,6 +2,7 @@ from S1E9 import Character
 
 
 def return42(first, second, third) -> str:
+    """formats three arguments as string with tuple"""
     return f"Vector: {(first, second, third)}"
 
 
