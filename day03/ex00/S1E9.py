@@ -20,10 +20,6 @@ class Character(ABC):
 
 class Stark(Character):
     """class Stark: child of Character class, implements method die"""
-    def __init__(self, first_name, is_alive=True) -> None:
-        """Stark's constructor: uses Character's constructor
-        to set first_name and is_alive"""
-        super().__init__(first_name, is_alive)
 
     def die(self) -> None:
         """Stark's method die() set an attribute is_alive to False"""
