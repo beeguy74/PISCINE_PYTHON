@@ -3,13 +3,18 @@
 from ft_calculator import calculator
 
 
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prYellow(skk):
+    """prints to stdout in yellow color"""
+    print("\033[93m {}\033[00m" .format(skk))
 
 
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prGreen(skk):
+    """prints to stdout in green color"""
+    print("\033[92m {}\033[00m" .format(skk))
 
 
 def main():
+    """my tests"""
     prYellow('\n00 test from subject')
     v1 = calculator([0.0, 1.0, 2.0, 3.0, 4.0, 5.0])
     v1 + 5

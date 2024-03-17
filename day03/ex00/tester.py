@@ -3,13 +3,18 @@
 from S1E9 import Character, Stark
 
 
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prYellow(skk):
+    """prints to stdout in yellow color"""
+    print("\033[93m {}\033[00m" .format(skk))
 
 
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prGreen(skk):
+    """prints to stdout in green color"""
+    print("\033[92m {}\033[00m" .format(skk))
 
 
 def main():
+    """my tests"""
     prYellow('\n00 test from subject')
     Ned = Stark("Ned")
     print(Ned.__dict__)
